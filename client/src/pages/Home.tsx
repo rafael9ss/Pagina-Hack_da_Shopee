@@ -49,14 +49,37 @@ export default function Home() {
     document.head.appendChild(script);
   }, []);
 
-  // Aplica efeito de scale pulse apenas em mobile/touch e remove após o primeiro toque/clique
+  // Aplica animações de botão em mobile/touch e desktop
   useEffect(() => {
+    // Adiciona classe de animação mobile a todos os botões em dispositivos touch
+    const isTouchDevice = () => {
+      return (
+        (typeof window !== 'undefined' &&
+          ('ontouchstart' in window ||
+            (navigator as any).maxTouchPoints > 0 ||
+            (navigator as any).msMaxTouchPoints > 0)) ||
+        false
+      );
+    };
+
+    if (isTouchDevice()) {
+      // Em mobile, adiciona animação de pulse
+      const buttons = document.querySelectorAll('button, a[role="button"]');
+      buttons.forEach((btn) => {
+        if (!btn.classList.contains('btn-mobile-pulse')) {
+          btn.classList.add('btn-mobile-pulse');
+        }
+      });
+    }
+
+    // Mantém a funcionalidade original para remover animação após clique
     const buttons = document.querySelectorAll('.btn-scale-pulse');
     buttons.forEach((btn) => {
       const stop = () => (btn as HTMLElement).classList.remove('btn-scale-pulse');
       (btn as HTMLElement).addEventListener('touchstart', stop, { passive: true, once: true });
       (btn as HTMLElement).addEventListener('click', stop, { once: true });
     });
+
     return () => {
       buttons.forEach((btn) => {
         const stop = () => (btn as HTMLElement).classList.remove('btn-scale-pulse');
