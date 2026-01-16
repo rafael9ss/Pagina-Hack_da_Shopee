@@ -13,10 +13,19 @@ export default function UrgencyBanner() {
     setCurrentDate(formatted);
   }, []);
 
+  const handleBannerClick = () => {
+    const plansSection = document.getElementById('planos');
+    if (plansSection) {
+      plansSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <div className="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 px-4 text-center font-bold text-xs sm:text-sm md:text-base sticky top-0 z-50 shadow-lg">
+    <button
+      onClick={handleBannerClick}
+      className="w-full bg-gradient-to-r from-red-600 to-red-500 text-white py-3 px-4 text-center font-bold text-xs sm:text-sm md:text-base sticky top-0 z-50 shadow-lg hover:from-red-700 hover:to-red-600 transition-all active:scale-95 cursor-pointer border-none"
+    >
       <div className="flex flex-row items-center justify-center gap-1 flex-nowrap">
-        {/* Atualizado para exibir a mensagem de desconto apenas nesta página. Mantém o estilo original com destaque em uma tag span. */}
         <p className="animate-pulse inline-flex items-center gap-2 whitespace-nowrap">
           ⚡ Desconto só HOJE
         </p>
@@ -27,6 +36,6 @@ export default function UrgencyBanner() {
           - {currentDate} ⚡
         </p>
       </div>
-    </div>
+    </button>
   );
 }

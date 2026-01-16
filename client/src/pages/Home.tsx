@@ -95,23 +95,12 @@ export default function Home() {
       <PurchaseNotifications />
       <WhatsAppButton />
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-8 md:py-16 overflow-hidden">
+      <section className="relative bg-black text-white py-4 md:py-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ff6b35_1px,transparent_1px),linear-gradient(to_bottom,#ff6b35_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         </div>
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <img src="/logo-hack.png" alt="Hack da Shopee" className="w-40 sm:w-48 md:w-64 lg:w-80 mx-auto mb-2 md:mb-2" />
-            <div className="mb-1 md:mb-2 px-4">
-              <h1 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-black leading-tight mb-1 md:mb-1" style={{fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 900, letterSpacing: '-0.02em'}}>
-                <span className="block text-white">7 passos que me fizeram</span>
-                <span className="block text-white">vender R$ 55.000 na Shopee e</span>
-                <span className="block text-[#ff6b35]">LARGAR a CLT em 90 dias</span>
-              </h1>
-              <p className="text-xs sm:text-xs md:text-sm text-[#ff6b35] font-bold mt-0.5 md:mt-1">
-                (Assista o video abaixo)
-              </p>
-            </div>
             {/*
               Substituímos a imagem estática por um player de vídeo incorporado. O
               script necessário é carregado via useEffect no início do
@@ -127,8 +116,8 @@ export default function Home() {
               className="w-full flex justify-center"
             />
             <button 
-              onClick={scrollToPlans}
-              className="premium-cta-btn text-sm sm:text-base md:text-lg lg:text-xl px-8 sm:px-10 md:px-12 lg:px-14 py-5 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[95%] break-words mt-4 md:mt-6 hover:shadow-lg active:shadow-md"
+              onClick={handleBasicPlanClick}
+              className="premium-cta-btn text-sm sm:text-base md:text-lg lg:text-xl px-8 sm:px-10 md:px-12 lg:px-14 py-5 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[95%] break-words mt-2 md:mt-3 hover:shadow-lg active:shadow-md"
             >
               QUERO MEU ACESSO
             </button>
