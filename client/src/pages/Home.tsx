@@ -116,7 +116,7 @@ export default function Home() {
               className="w-full flex justify-center"
             />
             <button 
-              onClick={handleBasicPlanClick}
+              onClick={scrollToPlans}
               className="premium-cta-btn text-sm sm:text-base md:text-lg lg:text-xl px-8 sm:px-10 md:px-12 lg:px-14 py-5 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[95%] break-words mt-2 md:mt-3 hover:shadow-lg active:shadow-md"
             >
               QUERO MEU ACESSO
