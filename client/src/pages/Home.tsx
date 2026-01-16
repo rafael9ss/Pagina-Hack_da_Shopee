@@ -638,7 +638,7 @@ export default function Home() {
               </div>
 
               <a href="https://lastlink.com/p/CD9471E2D/checkout-payment/" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button className="w-full bg-white text-[#ff6b35] hover:bg-gray-100 py-6 sm:py-7 md:py-8 lg:py-9 text-xs sm:text-sm md:text-base lg:text-lg font-black shadow-xl break-words leading-tight shine-press btn-scale-pulse">
+                <Button className="w-full bg-white text-[#ff6b35] hover:bg-gray-100 py-8 sm:py-10 md:py-12 lg:py-14 text-sm sm:text-base md:text-xl lg:text-2xl font-black shadow-[0_0_30px_rgba(255,255,255,0.5)] break-words leading-tight shine-press btn-scale-pulse uppercase tracking-tighter transform hover:scale-105 transition-all duration-300 ring-4 ring-white/30">
                   QUERO DESTRAVAR O HACK DA SHOPEE
                 </Button>
               </a>
