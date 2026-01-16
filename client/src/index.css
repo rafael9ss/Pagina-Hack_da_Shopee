@@ -407,3 +407,22 @@
     animation: none !important;
   }
 }
+
+/* Ultra Persuasive Premium Button */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(255,255,255,0.4); }
+  50% { transform: scale(1.03); box-shadow: 0 0 60px rgba(255,255,255,0.7); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}

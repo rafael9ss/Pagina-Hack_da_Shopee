@@ -637,9 +637,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <a href="https://lastlink.com/p/CD9471E2D/checkout-payment/" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button className="w-full bg-white text-[#ff6b35] hover:bg-gray-100 py-8 sm:py-10 md:py-12 lg:py-14 text-sm sm:text-base md:text-xl lg:text-2xl font-black shadow-[0_0_30px_rgba(255,255,255,0.5)] break-words leading-tight shine-press btn-scale-pulse uppercase tracking-tighter transform hover:scale-105 transition-all duration-300 ring-4 ring-white/30">
-                  QUERO DESTRAVAR O HACK DA SHOPEE
+              <a href="https://lastlink.com/p/CD9471E2D/checkout-payment/" target="_blank" rel="noopener noreferrer" className="block w-full group">
+                <Button className="w-full bg-white text-[#ff6b35] hover:bg-white py-10 sm:py-12 md:py-14 lg:py-16 text-base sm:text-lg md:text-2xl lg:text-3xl font-black shadow-[0_0_50px_rgba(255,255,255,0.6)] break-words leading-tight uppercase tracking-tighter transform hover:scale-110 transition-all duration-300 ring-8 ring-white/20 animate-pulse-slow relative overflow-hidden">
+                  <span className="relative z-10">QUERO DESTRAVAR O HACK DA SHOPEE</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none"></div>
                 </Button>
               </a>
             </Card>
