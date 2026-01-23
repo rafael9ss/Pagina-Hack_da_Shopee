@@ -95,7 +95,7 @@ export default function Home() {
       <PurchaseNotifications />
       <WhatsAppButton />
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-2 md:py-8 overflow-hidden">
+      <section className="relative bg-black text-white py-1 md:py-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ff6b35_1px,transparent_1px),linear-gradient(to_bottom,#ff6b35_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         </div>
@@ -111,13 +111,13 @@ export default function Home() {
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 280px; background: #000;"></vturb-smartplayer>',
+                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 240px; background: #000;"></vturb-smartplayer>',
               }}
               className="w-full flex justify-center"
             />
             <button 
               onClick={scrollToPlans}
-              className="premium-cta-btn text-xs sm:text-base md:text-lg lg:text-xl px-4 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[85%] break-words mt-0.5 md:mt-3 hover:shadow-lg active:shadow-md"
+              className="premium-cta-btn text-xs sm:text-base md:text-lg lg:text-xl px-4 sm:px-10 md:px-12 lg:px-14 py-2.5 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[80%] break-words mt-0 md:mt-3 hover:shadow-lg active:shadow-md"
             >
               QUERO MEU ACESSO
             </button>
