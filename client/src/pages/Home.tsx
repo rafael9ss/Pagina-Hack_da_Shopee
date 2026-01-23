@@ -111,7 +111,7 @@ export default function Home() {
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 240px; background: #000;"></vturb-smartplayer>',
+                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 240px;"></vturb-smartplayer>',
               }}
               className="w-full flex justify-center"
             />
