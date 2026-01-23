@@ -429,17 +429,22 @@
 
 /* Animação de Pulo (Bounce) Estilo WhatsApp */
 @keyframes persistent-bounce {
+	  /* Forçar aceleração de hardware e avisar o navegador */
+	  will-change: transform;
+	  transform: translateZ(0);
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1) translateZ(0);
   }
   40% {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px) scale(1.02) translateZ(0);
   }
   60% {
-    transform: translateY(-5px) scale(1.01);
+    transform: translateY(-5px) scale(1.01) translateZ(0);
   }
 }
 
 .animate-persistent-bounce {
-  animation: persistent-bounce 2s infinite;
-}
+	  will-change: transform;
+	  transform: translateZ(0);
+	  animation: persistent-bounce 2s infinite;
+	}
