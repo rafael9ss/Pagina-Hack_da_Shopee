@@ -117,7 +117,7 @@ export default function Home() {
             />
             <button 
               onClick={scrollToPlans}
-              className="premium-cta-btn text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-4 md:mt-6 hover:shadow-lg active:shadow-md"
+              className="premium-cta-btn animate-persistent-bounce text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-4 md:mt-6 hover:shadow-lg active:shadow-md"
             >
               QUERO MEU ACESSO
             </button>
