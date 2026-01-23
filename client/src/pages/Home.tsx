@@ -111,13 +111,13 @@ export default function Home() {
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 320px; background: #000;"></vturb-smartplayer>',
+                  '<vturb-smartplayer id="vid-692dc6f83dbab420e98ff2ad" style="display: block; margin: 0 auto; width: 100%; max-width: 240px; background: #000;"></vturb-smartplayer>',
               }}
               className="w-full flex justify-center"
             />
             <button 
               onClick={scrollToPlans}
-              className="premium-cta-btn premium-glow-intense text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-4 md:mt-6 hover:shadow-lg active:shadow-md"
+              className="premium-cta-btn premium-glow-intense text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-2 md:mt-6 hover:shadow-lg active:shadow-md"
             >
               QUERO MEU ACESSO
             </button>
