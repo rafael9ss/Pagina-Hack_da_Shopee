@@ -43,7 +43,7 @@ export default function Home() {
     // Carrega o script imediatamente (sem delay) para o vídeo abrir mais rápido
     const script = document.createElement('script');
     script.src =
-      'https://scripts.converteai.net/a930954b-410c-46a3-9750-318da063a52e/players/6978c825020a7a30f0f60faf/v4/player.js';
+      'https://scripts.converteai.net/a930954b-410c-46a3-9750-318da063a52e/players/6978ef4614d220c3d64fd2b3/v4/player.js';
     script.async = true;
     script.defer = false; // Garante que carrega o mais rápido possível
     document.head.appendChild(script);
@@ -111,7 +111,7 @@ export default function Home() {
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  '<vturb-smartplayer id="vid-6978c825020a7a30f0f60faf" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>',
+                  '<vturb-smartplayer id="vid-6978ef4614d220c3d64fd2b3" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>',
               }}
               className="w-full flex justify-center"
             />
