@@ -440,3 +440,18 @@
 .premium-glow-intense {
   animation: premium-glow-pulse 2s ease-in-out infinite;
 }
+
+
+/* Animação de Pulso Suave (Subtle Bounce) para Botão */
+@keyframes subtle-bounce-animation {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+.subtle-bounce {
+  animation: subtle-bounce-animation 2.5s ease-in-out infinite;
+}
