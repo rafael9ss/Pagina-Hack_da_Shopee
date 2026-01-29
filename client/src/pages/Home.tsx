@@ -15,8 +15,8 @@ export default function Home() {
   // Link do Plano Básico (R$ 10,00)
   // Atualizado para corrigir o endereço de checkout do plano básico. Esse link
   // envia o comprador diretamente para o pagamento do plano de R$10,00.
-  const basicPlanLink = "https://lastlink.com/p/C5A7176F8/checkout-payment/";
-  const premiumUpsellLink = "https://lastlink.com/p/C8D0FE83F/checkout-payment/"; // Link do Upsell Premium (R$ 24,90)
+  const basicPlanLink = "https://payfast.greenn.com.br/redirect/259808";
+  const premiumUpsellLink = "https://payfast.greenn.com.br/redirect/259806"; // Link do Upsell Premium (R$ 24,90)
 
   const handleBasicPlanClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -637,8 +637,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <a href="https://lastlink.com/p/CD9471E2D/checkout-payment/" target="_blank" rel="noopener noreferrer" className="block w-full group">
-                <Button className="w-full bg-white text-[#ff6b35] hover:bg-white py-6 sm:py-8 md:py-12 lg:py-16 text-xs sm:text-sm md:text-lg lg:text-2xl font-black shadow-[0_0_50px_rgba(255,255,255,0.6)] break-words leading-snug uppercase tracking-tight transform hover:scale-110 transition-all duration-300 ring-8 ring-white/20 animate-pulse-slow relative overflow-hidden px-3 sm:px-4 md:px-6 lg:px-8">
+              <a href="https://payfast.greenn.com.br/redirect/259805" target="_blank" rel="noopener noreferrer" className="block w-full group">
+                <Button className="w-full bg-white text-[#ff6b35] hover:bg-white py-10 sm:py-12 md:py-14 lg:py-16 text-base sm:text-lg md:text-2xl lg:text-3xl font-black shadow-[0_0_50px_rgba(255,255,255,0.6)] break-words leading-tight uppercase tracking-tighter transform hover:scale-110 transition-all duration-300 ring-8 ring-white/20 animate-pulse-slow relative overflow-hidden">
                   <span className="relative z-10">QUERO DESTRAVAR O HACK DA SHOPEE</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none"></div>
                 </Button>
