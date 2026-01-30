@@ -455,3 +455,89 @@
 .subtle-bounce {
   animation: subtle-bounce-animation 2.5s ease-in-out infinite;
 }
+
+
+/* ========== ANIMAÇÕES PREMIUM PARA BOTÃO PRINCIPAL ========== */
+
+/* Animação WhatsApp Style - Bounce Suave com Intensidade Controlada */
+@keyframes whatsapp-bounce-refined {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+.whatsapp-bounce {
+  animation: whatsapp-bounce-refined 1.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Sombra Neon Pulsante - Efeito de Profundidade */
+@keyframes neon-shadow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.4), 0 0 40px rgba(255, 107, 53, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.6), 0 0 60px rgba(255, 107, 53, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+}
+
+.neon-shadow-pulse {
+  animation: neon-shadow-pulse 2.5s ease-in-out infinite;
+  will-change: box-shadow;
+}
+
+/* Efeito Shimmer (Reflexo de Luz) */
+@keyframes shimmer-effect {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer-effect 3s infinite;
+  pointer-events: none;
+}
+
+/* Classe Combinada para Botão Premium */
+.btn-hero-premium {
+  position: relative;
+  border: 2px solid rgba(255, 107, 53, 0.5);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-hero-premium:hover {
+  border-color: rgba(255, 107, 53, 0.8);
+  transform: scale(1.05);
+}
+
+.btn-hero-premium:active {
+  transform: scale(0.98);
+}
+
+/* Compatibilidade Mobile - Remover animações em dispositivos com economia de bateria */
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-bounce,
+  .neon-shadow-pulse {
+    animation: none;
+  }
+}
