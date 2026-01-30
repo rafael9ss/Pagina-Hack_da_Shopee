@@ -117,7 +117,7 @@ export default function Home() {
             />
             <button 
               onClick={scrollToPlans}
-              className="premium-cta-btn whatsapp-bounce neon-shadow-pulse shimmer-overlay text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-2 md:mt-6 border-2 border-orange-400/50 hover:border-orange-400 rounded-full transition-all duration-300"
+              className="btn-hero-final btn-bold-border btn-inset-glow whatsapp-bounce neon-shadow-pulse shimmer-overlay text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-10 md:px-12 lg:px-14 py-4 sm:py-6 md:py-7 lg:py-8 inline-block max-w-[90%] break-words mt-2 md:mt-6 rounded-full transition-all duration-300"
             >
               QUERO MEU ACESSO
             </button>

@@ -541,3 +541,62 @@
     animation: none;
   }
 }
+
+
+/* ========== BORDAS GROSSAS E EFEITO 3D PERSUASIVO ========== */
+
+/* Classe para Borda Grossa e Marcada */
+.btn-bold-border {
+  border: 4px solid #ff6b35;
+  box-shadow: 
+    0 0 0 2px rgba(255, 107, 53, 0.3),
+    0 8px 0 0 rgba(0, 0, 0, 0.2),
+    0 12px 20px rgba(0, 0, 0, 0.3),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.btn-bold-border:hover {
+  border-color: #ff8c5a;
+  box-shadow: 
+    0 0 0 2px rgba(255, 107, 53, 0.5),
+    0 6px 0 0 rgba(0, 0, 0, 0.2),
+    0 10px 25px rgba(255, 107, 53, 0.4),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-bold-border:active {
+  box-shadow: 
+    0 0 0 2px rgba(255, 107, 53, 0.5),
+    0 2px 0 0 rgba(0, 0, 0, 0.2),
+    0 4px 15px rgba(255, 107, 53, 0.3),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(4px);
+}
+
+/* Efeito de Brilho Interno (Inset Glow) */
+@keyframes inset-glow-pulse {
+  0%, 100% {
+    inset-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    inset-shadow: inset 0 0 25px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.btn-inset-glow {
+  animation: inset-glow-pulse 2s ease-in-out infinite;
+}
+
+/* Classe Combinada para Botão Persuasivo Final */
+.btn-hero-final {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hero-final:hover {
+  background: linear-gradient(135deg, #ff8c5a 0%, #ffb380 100%);
+}
