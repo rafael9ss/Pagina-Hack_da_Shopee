@@ -23,18 +23,18 @@ export default function UrgencyBanner() {
   return (
     <button
       onClick={handleBannerClick}
-      className="w-full bg-gradient-to-r from-red-600 to-red-500 text-white py-1.5 sm:py-3 px-4 text-center font-bold text-[10px] sm:text-sm md:text-base sticky top-0 z-50 shadow-lg hover:from-red-700 hover:to-red-600 transition-all active:scale-95 cursor-pointer border-none"
+      className="w-full bg-red-600 hover:bg-red-700 text-white py-2 px-4 text-center font-semibold text-[10px] sm:text-xs md:text-sm sticky top-0 z-50 transition-colors duration-200 cursor-pointer border-none"
     >
-      <div className="flex flex-row items-center justify-center gap-1 flex-nowrap">
-        <p className="animate-pulse inline-flex items-center gap-2 whitespace-nowrap">
+      <div className="flex items-center justify-center gap-1.5">
+        <span className="inline-flex items-center gap-1 whitespace-nowrap">
           ⚡ Desconto só HOJE
-        </p>
-        <span className="bg-yellow-300 text-red-600 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full font-black text-[10px] sm:text-sm md:text-base shadow-lg transform hover:scale-110 transition-transform whitespace-nowrap">
+        </span>
+        <span className="bg-white/15 text-white px-2 py-0.5 font-bold text-[10px] sm:text-xs whitespace-nowrap">
           nessa página
         </span>
-        <p className="animate-pulse inline-flex items-center gap-2 whitespace-nowrap">
-          - {currentDate} ⚡
-        </p>
+        <span className="inline-flex items-center whitespace-nowrap">
+          — {currentDate} ⚡
+        </span>
       </div>
     </button>
   );
